@@ -1,0 +1,55 @@
+.design {
+    padding: 120px 0 101px;
+    background-color: #fff;
+
+    @include a (tablet-xl) {
+        padding: 60px 0 50px;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &__content {
+        max-width: 486px;
+    }
+
+    &__span {
+        display: block;
+        font-weight: 500;
+        color: #544837;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-size: toRem(36);
+        font-weight: 700;
+        color: #2F281E;
+        margin-bottom: 22px;
+
+        &-sml {
+            font-size: toRem(16);
+            font-weight: 700;
+            color: #2F281E;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__descr {
+        font-weight: 500;
+        line-height: 26px;
+        color: #544837;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

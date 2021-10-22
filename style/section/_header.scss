@@ -1,0 +1,63 @@
+.header {
+    padding: 25px 0;
+    background-color: #fff;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include a (tablet) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 29px;
+        align-items: center;
+
+        @include a (mobile) {
+            flex-direction: column;
+            
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        &-link {
+            font-size: toRem(14);
+            color: #2F281E;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 14px;
+        white-space: nowrap;
+
+    }
+
+    &__button {
+        &-left {
+            border: 1px solid #BCD0E5;
+            border-radius: 4px;
+            background-color: transparent;
+            padding: 11px 25px;
+            color: #173A56;
+        }
+
+        &-right {
+            font-weight: 600;
+            border-radius: 4px;
+            background-color: $main-color;
+            color: #fff;
+            padding: 11px 25px;
+        }
+    }
+}

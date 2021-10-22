@@ -1,0 +1,85 @@
+.super {
+    background-image: url(./../img/super-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 230px 0 379px;
+    position: relative;
+
+    &__title {
+        font-size: toRem(36);
+        font-weight: 700;
+        color: #2F281E;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    &__descr {
+        font-weight: 500;
+        line-height: 26px;
+        color: #567592;
+        max-width: 542px;
+        text-align: center;
+        margin: 0 auto 45px;
+    }
+
+    &__btn {
+        display: block;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: 15px 30px;
+        color: #fff;
+        background-color: $main-color;
+    }
+
+    &__image {
+        &-1 {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+
+            @include a (tablet-xl) {
+                display: none;
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            right: 20%;
+            top: 15%;
+
+            @include a (tablet) {
+                display: none;
+            }
+        }
+
+        &-3 {
+            position: absolute;
+            left: 10%;
+            top: 55%;
+
+            @include a(tablet) {
+                display: none;
+            }
+        }
+
+        &-4 {
+            position: absolute;
+            right: 30%;
+            top: 65%;
+
+            @include a (laptop) {
+                display: none;
+            }
+        }
+
+        &-5 {
+            position: absolute;
+            right: 10%;
+            top: 55%;
+
+            @include a (mobile) {
+                display: none;
+            }
+        }
+    }
+}

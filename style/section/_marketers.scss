@@ -1,0 +1,54 @@
+.marketers {
+    padding-bottom: 157px;
+    background-color: #fff;
+    margin-top: 39px;
+
+    @include a (tablet-xl) {
+        padding-bottom: 60px;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &__content {
+        max-width: 486px;
+    }
+
+    &__span {
+        font-weight: 500;
+        color: #544837;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-size: toRem(36);
+        font-weight: 700;
+        color: #2F281E;
+        margin-bottom: 22px;
+
+        &-sml {
+            font-weight: 700;
+            color: #2F281E;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__descr {
+        font-weight: 500;
+        line-height: 26px;
+        color: #544837;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

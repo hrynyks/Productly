@@ -1,0 +1,75 @@
+.managers {
+    padding: 101px 0 104px;
+    background-color: #fff;
+
+    @include a (tablet-xl) {
+        padding: 50px 0 50px;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &__content {
+        max-width: 486px;
+        margin-top: 49px;
+
+        @include a (tablet-xl) {
+            order: -1;
+        }
+    }
+
+    &__span {
+        font-weight: 500;
+        color: #544837;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        font-size: toRem(36);
+        font-weight: 700;
+        color: #2F281E;
+        margin-bottom: 25px;
+    }
+
+    &__descr {
+        font-weight: 500;
+        line-height: 26px;
+        color: #544837;
+        margin-bottom: 30px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        padding-left: 65px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #544837;
+        max-width: 430px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(./../img/managers-icon.png);
+            width: 35px;
+            height: 35px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
